@@ -31,25 +31,20 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Enter your TOTP key data below
-static const uint8_t num_keys = 2;
+static const uint8_t num_keys = 1;
 static uint8_t keys[] = {
-    0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x21, 0xde, 0xad, 0xbe, 0xef, // 1 - JBSWY3DPEHPK3PXP
-    0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x21, 0xde, 0xad, 0xbe, 0xef, // 2 - JBSWY3DPEHPK3PXP
+    0xce, 0x55, 0xa3, 0xe5, 0x66, 0x2a, 0xa1, 0x11, 0xbe, 0x3d, // 1 - ZZK2HZLGFKQRDPR5
 };
 static const uint8_t key_sizes[] = {
-    10,
     10,
 };
 static const uint32_t timesteps[] = {
     30,
-    30,
 };
 static const char labels[][2] = {
-    { '2', 'F' },
-    { 'A', 'C' },
+    { 'D' },
 };
 static const hmac_alg algorithms[] = {
-    SHA1,
     SHA1,
 };
 // END OF KEY DATA.
